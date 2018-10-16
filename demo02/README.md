@@ -21,26 +21,6 @@ class EScroll{
 由于简化了代码，去掉可以配置的参数，option的参数是计算快速滑动的回弹动画，保存容器，滚动对象及样式。
 
 
-### 工具类
-新建工具类的文件 src/easy-scroll/utils.js
-```
-export const getRect = function (el) {
-  if (el instanceof window.SVGElement) {
-    let rect = el.getBoundingClientRect()
-    return { top: rect.top, left: rect.left, width: rect.width, height: rect.height }
-  } else {
-    return {
-      top: el.offsetTop, left: el.offsetLeft,
-      width: el.offsetWidth, height: el.offsetHeight
-    }
-  }
-}
-
-export const addEvent = function (el, type, fn, capture) {
-  el.addEventListener(type, fn, {passive: false, capture: !!capture})
-}
-```
-
 
 #### 新增 _init 函数
 1. 初始化数据。
@@ -48,7 +28,6 @@ export const addEvent = function (el, type, fn, capture) {
 3. 调用refresh函数获取容器的高度，刷新计算滚动最大值和最小值。
 
 ```
-import {getRect, addEvent} from  './utils'
 
 class EScroll{
   constructor(el, options) {

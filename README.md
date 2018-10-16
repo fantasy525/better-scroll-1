@@ -18,7 +18,7 @@ better-scroll 是一款滚动场景需求的插件。它的核心是借鉴的 [i
 * [1. BS环境初始化](https://github.com/ljcGitHub/better-scroll/blob/master/demo01)
 * [2. 初始化函数](https://github.com/ljcGitHub/better-scroll/blob/master/demo02)
 * [3. touchStart](https://github.com/ljcGitHub/better-scroll/blob/master/demo03)
-
+* [4. touchMove](https://github.com/ljcGitHub/better-scroll/blob/master/demo04)
  
 
 

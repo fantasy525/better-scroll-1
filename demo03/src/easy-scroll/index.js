@@ -1,5 +1,5 @@
 import {
-  getRect, addEvent, offset, getNow, ease,
+  getRect, addEvent, offset, getNow, ease, 
   DIRECTION_UP, DIRECTION_DOWN, DIRECTION_LEFT, DIRECTION_RIGHT,
   momentum
 } from '../../../demo01/src/easy-scroll/utils'
@@ -68,6 +68,27 @@ class EScroll{
     this.directionY = 0
     this.wrapperOffset = offset(this.wrapper)
   }
+  _start(e) { 
+    e.preventDefault()
+
+    this.distX = 0
+    this.distY = 0 
+    this.directionX = 0
+    this.directionY = 0
+    this.startTime = getNow()
+
+    let point = e.touches ? e.touches[0] : e
+
+    this.startX = this.x
+    this.startY = this.y
+    this.absStartX = this.x
+    this.absStartY = this.y
+    this.pointX = point.pageX
+    this.pointY = point.pageY
+  }
+  _move(e) { }
+  _end(e) { }
+  _transitionEnd(e) { }
 }
 
 export default EScroll
