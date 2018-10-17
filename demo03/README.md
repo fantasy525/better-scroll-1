@@ -25,8 +25,8 @@ class EScroll{
 
     this.distX = 0 // 重置x坐标的差值
     this.distY = 0 // 重置y坐标的差值
-    this.directionX = 0 // 重置x坐标的绝对值
-    this.directionY = 0 // 重置y坐标的绝对值
+    this.directionX = 0 // 重置x轴移动的方向
+    this.directionY = 0 // 重置y轴移动的方向
     this.startTime = getNow() // 记录当前touch的时间
     
     let point = e.touches ? e.touches[0] : e
