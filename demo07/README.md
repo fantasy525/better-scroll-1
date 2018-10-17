@@ -1,8 +1,8 @@
-## 源码学习和参考
+## 学习分享
 tip: 学习源码是最快速的进步途径之一，其实黄老写的库中，大多数写的很精细，通俗易懂。
 
 
-#### 源码入口，当前判断为  1.32.2
+#### 源码入口
 ```
 import { eventMixin } from './scroll/event'
 import { initMixin } from './scroll/init'
